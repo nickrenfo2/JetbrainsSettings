@@ -1,0 +1,9 @@
+<toolSet name="Documentation">
+  <tool name="JSDoc" description="Generrate JavaScript documentation" showInMainMenu="true" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="/usr/local/bin/jsdoc" />
+      <option name="PARAMETERS" value="-c docs/conf.json" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>
