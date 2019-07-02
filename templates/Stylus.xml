@@ -1,0 +1,14 @@
+<templateSet group="Stylus">
+  <template name="@max" value="@media screen and (max-width: $SIZE$)&#10;  $END$" description="@media max-width" toReformat="false" toShortenFQNames="true">
+    <variable name="SIZE" expression="" defaultValue="768px" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="@min" value="@media screen and (min-width: $SIZE$)&#10;  $END$" description="@media min-width" toReformat="false" toShortenFQNames="true">
+    <variable name="SIZE" expression="" defaultValue="769px" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>

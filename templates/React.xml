@@ -1,0 +1,14 @@
+<templateSet group="React">
+  <template name="cdu" value="componentDidUpdate(prevProps, prevState) {&#10; $END$&#10;}&#10;" description="Invoked immediately after the component's updates are flushed to the DOM." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="rref" value="ref={node =&gt; this.$nodeName$ = node}" description="creates a function reference" toReformat="true" toShortenFQNames="true">
+    <variable name="nodeName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_CLASS" value="false" />
+    </context>
+  </template>
+</templateSet>

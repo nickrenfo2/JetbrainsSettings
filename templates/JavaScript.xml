@@ -1,0 +1,194 @@
+<templateSet group="JavaScript">
+  <template name="itar" value="for (var $INDEX$ = 0; $INDEX$ &lt; $ARRAY$.length; $INDEX$++) {&#10;  var $VAR$ = $ARRAY$[$INDEX$];&#10;  $END$&#10;}" description="Iterate elements of array (using VAR)" toReformat="true" toShortenFQNames="true">
+    <variable name="INDEX" expression="jsSuggestIndexName()" defaultValue="&quot;i&quot;" alwaysStopAt="true" />
+    <variable name="ARRAY" expression="jsArrayVariable()" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="jsSuggestVariableName()" defaultValue="&quot;o&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="clog" value="console.log($END$);" description="console.log()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JADE" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Prom" value="return new Promise((resolve,reject)=&gt;{&#10;    $END$&#10;})" description="return new Promise()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="then" value=".then(($RESULTS$)=&gt;{&#10;    $END$&#10;});" description=".then() for promise" toReformat="true" toShortenFQNames="true">
+    <variable name="RESULTS" expression="" defaultValue="&quot;results&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="litar" value="for (let $INDEX$ = 0; $INDEX$ &lt; $ARRAY$.length; $INDEX$++) {&#10;  let $VAR$ = $ARRAY$[$INDEX$];&#10;  $END$&#10;}" description="Iterate elements of array (using LET)" toReformat="true" toShortenFQNames="true">
+    <variable name="INDEX" expression="jsSuggestIndexName()" defaultValue="&quot;i&quot;" alwaysStopAt="true" />
+    <variable name="ARRAY" expression="jsArrayVariable()" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="jsSuggestVariableName()" defaultValue="&quot;o&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ritar" value="for (let $INDEX$ = $ARRAY$.length - 1; $INDEX$ &gt;= 0; $INDEX$--) {&#10;  let $VAR$ = $ARRAY$[$INDEX$];&#10;  $END$&#10;}" description="Iterate elements of array in reverse order" toReformat="true" toShortenFQNames="true">
+    <variable name="INDEX" expression="jsSuggestIndexName()" defaultValue="&quot;i&quot;" alwaysStopAt="true" />
+    <variable name="ARRAY" expression="jsArrayVariable()" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="jsSuggestVariableName()" defaultValue="&quot;o&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="Pall" value="Promise.all($promiseArr$)&#10;.then(($results$)=&gt;{&#10;    $END$&#10;});" description="Promise.all()" toReformat="true" toShortenFQNames="true">
+    <variable name="promiseArr" expression="" defaultValue="&quot;promiseArr&quot;" alwaysStopAt="true" />
+    <variable name="results" expression="" defaultValue="&quot;results&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="promArr" value="let promiseArr = [];" description="new promiseArray" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cwarn" value="console.warn($END$);" description="console.warn()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="N_ENV" value="process.env.NODE_ENV" description="(access node env)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="func" value="function(){$SELECTION$}" description="Surround in function" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="itin" value="for (var $VAR$ in $ARRAY$) {&#10;  if(!$ARRAY$.hasOwnProperty($VAR$))&#10;    continue;&#10;  var $VAR2$ = $ARRAY$[$VAR$];&#10;  $END$&#10;}" description="Iterate (for..in)" toReformat="true" toShortenFQNames="true">
+    <variable name="ARRAY" expression="jsArrayVariable()" defaultValue="&quot;array &quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="jsSuggestVariableName()" defaultValue="&quot;o&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="firstWord(String)" defaultValue="&quot;thing&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="pcatch" value=".catch((rejected)=&gt;{&#10;    $END$&#10;})" description="Promise.catch()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="req" value="const $package$ = require('$package$');" description="require()" toReformat="true" toShortenFQNames="true">
+    <variable name="package" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="litof" value="for (let $VAR$ of $ARRAY$) {&#10;  $END$&#10;}" description="Iterate (for..of)" toReformat="true" toShortenFQNames="true">
+    <variable name="ARRAY" expression="jsArrayVariable()" defaultValue="&quot;array &quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="jsSuggestVariableName()" defaultValue="&quot;o&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="stf" value="JSON.stringify($END$)" description="JSON.stringify()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JADE" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="prs" value="JSON.parse($END$)" description="JSON.parse()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JADE" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ctrace" value="console.trace();$END$" description="console.trace();" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JADE" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="pipe" value="    .pipe($END$)" description="gulp .pipe()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="litin" value="for (let $VAR$ in $OBJ$) {&#10;  if(!$OBJ$.hasOwnProperty($VAR$))&#10;    continue;&#10;  let $VAR2$ = $OBJ$[$VAR$];&#10;  $END$&#10;}" description="Iterate (for..in) (using LET)" toReformat="true" toShortenFQNames="true">
+    <variable name="OBJ" expression="completeSmart()" defaultValue="&quot;object &quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="completeSmart()" defaultValue="&quot;key&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="completeSmart()" defaultValue="&quot;val&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="elif" value="else if ($CONDITION$) {&#10;    $END$&#10;}" description="else if" toReformat="true" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cp" value="JSON.parse(JSON.stringify($OBJ$));" description="Copy an object using JSON stringify/parse" toReformat="true" toShortenFQNames="true">
+    <variable name="OBJ" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="copy" value="JSON.parse(JSON.stringify($SELECTION$))" description="Wrap selection with JSON stringify/parse" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="(){}" value="($ARGS$)=&gt;{&#10;    $END$&#10;}" description="ES6 Arrow Function" toReformat="true" toShortenFQNames="true">
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rget" value="router.get('/$ROUTE$', (req, res, next) =&gt; {&#10;    $END$&#10;});" description="router.get()" toReformat="true" toShortenFQNames="true">
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="amap" value="$ARRAY$.map(($PROP$,ind)=&gt;{&#10;    $END$&#10;});" description="Array.map(()=&gt;{})" toReformat="true" toShortenFQNames="true">
+    <variable name="ARRAY" expression="jsArrayVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP" expression="jsSuggestVariableName()" defaultValue="elm" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="afn" value="$funcName$ = ($param$) =&gt; {&#10;    $END$&#10;};" description="Named Arrow function" toReformat="true" toShortenFQNames="true">
+    <variable name="funcName" expression="camelCase(String)" defaultValue="handleClick" alwaysStopAt="true" />
+    <variable name="param" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="aafn" value="($ARGS$)=&gt;{&#10;    $END$&#10;}" description="Anonymous ES6 Arrow Function" toReformat="true" toShortenFQNames="true">
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rpost" value="router.post('/$ROUTE$', (req, res, next) =&gt; {&#10;    $END$&#10;});" description="router.post()" toReformat="true" toShortenFQNames="true">
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="scu" value="shouldComponentUpdate(nextProps, nextState){&#10;    $END$&#10;}" description="shouldComponentUpdate(){}" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ds" value="let {$PROPS$} = $OBJ$;&#10;$END$" description="Assignment Destructure" toReformat="true" toShortenFQNames="true">
+    <variable name="PROPS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJ" expression="" defaultValue="obj" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="greq" value="const $NAME$ = require('gulp-$NAME$')" description="require() Gulp package" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
