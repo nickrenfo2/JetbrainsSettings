@@ -1,0 +1,6 @@
+<application>
+  <component name="NodeJSRemoteInterpreters">
+    <interpreter node-remote-interpreter="docker://docker_testing_web:latest/node" DOCKER_ACCOUNT_NAME="Docker" DOCKER_IMAGE_NAME="docker_testing_web:latest" DOCKER_REMOTE_PROJECT_PATH="/opt/project" INTERPRETER_PATH="node" HELPERS_PATH=".webstorm_nodejs_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" VERSION="" />
+    <interpreter node-remote-interpreter="docker://docker_testing:latest/node" DOCKER_ACCOUNT_NAME="Docker" DOCKER_IMAGE_NAME="docker_testing:latest" DOCKER_REMOTE_PROJECT_PATH="/opt/project" INTERPRETER_PATH="node" HELPERS_PATH=".webstorm_nodejs_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" VERSION="" />
+  </component>
+</application>
