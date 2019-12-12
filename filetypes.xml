@@ -1,20 +1,21 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping ext="runner" type="Dockerfile" />
       <mapping pattern="*.js.flow" type="Flow" />
       <mapping pattern="*.js.flow" type="Flow" />
       <mapping pattern="new" type="JavaScript" />
       <mapping pattern=".readme" type="Markdown" />
-      <mapping pattern="ccr_excellent_business.json" type="PLAIN_TEXT" />
-      <mapping pattern="alsdfk" type="PLAIN_TEXT" />
-      <mapping pattern="adsf" type="PLAIN_TEXT" />
       <mapping pattern="old_packages" type="PLAIN_TEXT" />
-      <mapping pattern="descriptions" type="PLAIN_TEXT" />
-      <mapping pattern="asdfa" type="PLAIN_TEXT" />
+      <mapping pattern="alsdfk" type="PLAIN_TEXT" />
       <mapping pattern=".env" type="PLAIN_TEXT" />
-      <mapping pattern="alsdkjf" type="PLAIN_TEXT" />
-      <mapping pattern="asdf" type="PLAIN_TEXT" />
+      <mapping pattern="descriptions" type="PLAIN_TEXT" />
+      <mapping pattern="ccr_excellent_business.json" type="PLAIN_TEXT" />
       <mapping pattern="blahh" type="PLAIN_TEXT" />
+      <mapping pattern="asdf" type="PLAIN_TEXT" />
+      <mapping pattern="asdfa" type="PLAIN_TEXT" />
+      <mapping pattern="alsdkjf" type="PLAIN_TEXT" />
+      <mapping pattern="adsf" type="PLAIN_TEXT" />
       <mapping ext="text" type="PLAIN_TEXT" />
       <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
